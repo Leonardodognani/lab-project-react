@@ -5,6 +5,7 @@
   flex-direction: column;
   width: auto;
   font-size: 24px;
-  background-color: rgb(209, 215, 215);
+  background-color: rgb(207, 238, 242);
   padding: 16px 0 16px 16px;
+  margin-bottom: 8px;
 }

@@ -1,10 +1,16 @@
+.backImage {
+  background-image: url(./components/sky1.jpg);
+  background-repeat: no;
+  background-size: cover;
+}
 .allContent {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  opacity: 85%;
 }
 .header {
-  background-color: rgb(209, 215, 215);
+  background-color: rgb(207, 238, 242);
   border: 1px solid black;
   width: auto;
   font-size: 32px;
@@ -12,7 +18,7 @@
   border-radius: 12px;
 }
 .container {
-  background-color: rgb(192, 188, 188);
+  background-color: rgb(167, 202, 212);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +28,7 @@
   border: 1px solid black;
   border-radius: 12px;
   width: 70%;
-  margin-top: 32px;
+  margin: 96px 0;
 }
 .newTask {
   font-size: 24px;
@@ -44,9 +50,9 @@
   border: 2px solid black;
 }
 .btn:hover {
-  background-color: rgb(100, 108, 108);
-  color: rgb(239, 241, 243);
+  background-color: rgb(53, 196, 206);
+  color: rgb(255, 255, 255);
 }
 .btn:active {
-  background-color: rgb(48, 47, 47);
+  background-color: rgb(10, 37, 79);
 }
