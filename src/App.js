@@ -1,12 +1,9 @@
-import Tasks from "./components/Tasks";
+import React from "react";
+
 import "./App.css";
 import TaskBlock from "./components/TaskBlock";
 
 function App() {
-  const clickHandler = () => {
-    alert("Aeeee! Clicou, parabéns! o/");
-  };
-
   return (
     <div className="backImage">
       <div className="allContent">
@@ -20,9 +17,7 @@ function App() {
                 className="newInput"
                 type="text"
               ></input>
-              <button onClick={clickHandler} className="btn">
-                Adicionar
-              </button>
+              <button className="btn">Adicionar</button>
             </p>
 
             <TaskBlock></TaskBlock>
