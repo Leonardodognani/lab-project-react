@@ -22,7 +22,7 @@ function TaskBlock() {
 
   return (
     <div className="block">
-      Tarefas:
+      Tarefas
       <Tasks tarefa={newTask[0].tarefa}></Tasks>
       <Tasks tarefa={newTask[1].tarefa}></Tasks>
       <Tasks tarefa={newTask[2].tarefa}></Tasks>
