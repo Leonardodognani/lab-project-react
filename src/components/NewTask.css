@@ -1,0 +1,31 @@
+.newTask {
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 32px 0 56px 0;
+}
+.newInput {
+  width: 40%;
+  font-size: 24px;
+  margin: 0 16px;
+  border-radius: 12px;
+}
+.btn {
+  font-size: 22px;
+  padding: 4px;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+.btn:hover {
+  background-color: rgb(53, 196, 206);
+  color: rgb(255, 255, 255);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.btn:active {
+  background-color: rgb(10, 37, 79);
+  color: #fff;
+  transition: 0s;
+}

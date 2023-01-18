@@ -2,7 +2,7 @@ import "./TaskBlock.css";
 import Tasks from "./Tasks";
 
 function TaskBlock() {
-  const newTask = [
+  const addedTask = [
     {
       tarefa: "fazer almoço",
     },
@@ -23,11 +23,11 @@ function TaskBlock() {
   return (
     <div className="block">
       Tarefas
-      <Tasks tarefa={newTask[0].tarefa}></Tasks>
-      <Tasks tarefa={newTask[1].tarefa}></Tasks>
-      <Tasks tarefa={newTask[2].tarefa}></Tasks>
-      <Tasks tarefa={newTask[3].tarefa}></Tasks>
-      <Tasks tarefa={newTask[4].tarefa}></Tasks>
+      <Tasks tarefa={addedTask[0].tarefa}></Tasks>
+      <Tasks tarefa={addedTask[1].tarefa}></Tasks>
+      <Tasks tarefa={addedTask[2].tarefa}></Tasks>
+      <Tasks tarefa={addedTask[3].tarefa}></Tasks>
+      <Tasks tarefa={addedTask[4].tarefa}></Tasks>
     </div>
   );
 }
