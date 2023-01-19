@@ -1,29 +1,45 @@
 import React, { useState } from "react";
 import "./NewTask.css";
+import "./AdTask";
 
-const NewTask = () => {
-  const [addedTitle, setAddedTitle] = useState("");
+const NewTask = (props) => {
+  const [enteredTitle, setEnteredTitle] = useState("");
 
   const titleChangeHandler = (event) => {
-    setAddedTitle(event.target.value);
+    setEnteredTitle(event.target.value);
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const taskData = {
+      title: enteredTitle,
+    };
+
+    props.onSaveTaskData(taskData);
+    setEnteredTitle("");
   };
 
   return (
-    <form>
-      <div>
-        <p className="newTask">
-          Nova tarefa
-          <input
-            placeholder="Insira aqui sua nova tarefa"
-            className="newInput"
-            type="text"
-            onChange={titleChangeHandler}
-          />
-          <button className="btn" type="submit" onClick={titleChangeHandler}>
-            Adicionar
-          </button>
-        </p>
-      </div>
+    <form onSubmit={submitHandler}>
+      <p className="newTask">
+        Nova tarefa
+        <input
+          placeholder="Insira aqui sua nova tarefa"
+          className="newInput"
+          type="text"
+          value={enteredTitle}
+          onChange={titleChangeHandler}
+        />
+        <button
+          className="btn"
+          type="submit"
+          value={enteredTitle}
+          onClick={titleChangeHandler}
+        >
+          Adicionar
+        </button>
+      </p>
     </form>
   );
 };

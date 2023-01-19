@@ -5,6 +5,10 @@ import "./App.css";
 import TaskBlock from "./components/TaskBlock";
 import AdTask from "./components/AdTask";
 
+const addTaskHandler = (addedTask) => {
+  console.log(addedTask);
+};
+
 function App() {
   return (
     <div className="backImage">
@@ -12,8 +16,8 @@ function App() {
         <div className="container">
           <header className="header">Lista de Afazeres</header>
           <div>
-            <AdTask></AdTask>
-            <TaskBlock></TaskBlock>
+            <AdTask onAddTask={addTaskHandler} />
+            <TaskBlock />
           </div>
         </div>
       </div>
