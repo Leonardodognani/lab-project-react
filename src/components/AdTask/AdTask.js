@@ -1,6 +1,6 @@
 import React from "react";
 import "./AdTask.css";
-import NewTask from "./NewTask";
+import NewTask from "../NewTask/NewTask";
 
 const AdTask = (props) => {
   const saveNewTaskHandler = (enteredTaskData) => {

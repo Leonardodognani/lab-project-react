@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NewTask.css";
-import "./AdTask";
+import "./../AdTask/AdTask";
 
 const NewTask = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
@@ -13,7 +13,7 @@ const NewTask = (props) => {
     event.preventDefault();
 
     const taskData = {
-      title: enteredTitle,
+      tarefa: enteredTitle,
     };
 
     props.onSaveTaskData(taskData);

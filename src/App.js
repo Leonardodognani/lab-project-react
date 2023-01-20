@@ -1,9 +1,8 @@
 import React from "react";
-import NewTask from "./components/NewTask";
 
 import "./App.css";
-import TaskBlock from "./components/TaskBlock";
-import AdTask from "./components/AdTask";
+import TaskBlock from "./components/TaskBlock/TaskBlock";
+import AdTask from "./components/AdTask/AdTask";
 
 const addTaskHandler = (addedTask) => {
   console.log(addedTask);

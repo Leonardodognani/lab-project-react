@@ -1,5 +1,5 @@
 import "./Tasks.css";
-import "./TaskBlock";
+import "./../TaskBlock/TaskBlock";
 
 function Tasks(prop) {
   return (
