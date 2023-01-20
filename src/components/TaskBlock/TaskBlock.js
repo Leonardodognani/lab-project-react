@@ -20,6 +20,12 @@ function TaskBlock() {
     },
   ];
 
+  const addTarefa = new Array(addedTask);
+
+  const novaTarefa = addedTask.map(function (addedTask) {
+    return (addedTask = addTarefa);
+  });
+
   console.log(addedTask);
   return (
     <div className="block">
