@@ -1,7 +1,8 @@
 import "./TaskBlock.css";
 import Tasks from "./../Task/Tasks";
+import React from "react";
 
-function TaskBlock() {
+const TaskBlock = () => {
   const addedTask = [
     {
       tarefa: "fazer almoço",
@@ -20,24 +21,17 @@ function TaskBlock() {
     },
   ];
 
-  const addTarefa = new Array(addedTask);
+  const renderTarefas = () => {
+    return (
+      <>
+        {addedTask.forEach((element) => {
+          <Tasks tarefa={element.tarefa} />;
+        })}
+      </>
+    );
+  };
 
-  const novaTarefa = addedTask.map(function (addedTask) {
-    return (addedTask = addTarefa);
-  });
-
-  console.log(addedTask);
-  return (
-    <div className="block">
-      Tarefas
-      <Tasks tarefa={addedTask[0].tarefa} />{" "}
-      {/* colocar um MAP ou um ForEach, pesquisar sobre add objeto que eu defino */}
-      <Tasks tarefa={addedTask[1].tarefa} />
-      <Tasks tarefa={addedTask[2].tarefa} />
-      <Tasks tarefa={addedTask[3].tarefa} />
-      <Tasks tarefa={addedTask[4].tarefa} />
-    </div>
-  );
-}
+  return <>{renderTarefas()}</>;
+};
 
 export default TaskBlock;

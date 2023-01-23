@@ -1,12 +1,16 @@
 import "./Tasks.css";
 import "./../TaskBlock/TaskBlock";
+import React from "react";
 
-function Tasks(prop) {
+const Tasks = (props) => {
+  {
+    console.log("oasdja");
+  }
   return (
     <div className="tasksContainer">
-      <div>{prop.tarefa}</div>
+      <div>{props.tarefa}</div>
     </div>
   );
-}
+};
 
 export default Tasks;
