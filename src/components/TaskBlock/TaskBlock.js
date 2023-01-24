@@ -31,7 +31,7 @@ const TaskBlock = () => {
     );
   };
 
-  return <>{renderTarefas()}</>;
+  return <div className="block">{renderTarefas()}</div>;
 };
 
 export default TaskBlock;
