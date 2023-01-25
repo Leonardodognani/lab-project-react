@@ -26,6 +26,12 @@ const TaskBlock = () => {
       <>
         {addedTask.forEach((element) => {
           <Tasks tarefa={element.tarefa} />;
+          {
+            console.log(element);
+            {
+              /* Dentro do bloco, a função element funciona e pode ser chamada. Fora do bloco ela não é reconhecida e da como "não definida". Investigar o porquê da função não sair do bloco*/
+            }
+          }
         })}
       </>
     );
